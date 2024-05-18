@@ -1,3 +1,8 @@
+# # 20240960 / 오태경
+# 8장 연습문제 1번
+
+
+#--------------------
 #사용자 정의 함수부
 
 def input_age():
@@ -5,7 +10,9 @@ def input_age():
     while age<=0 or age>120:
         age=int(input('나이?'))
     return age
+    
 
+#--------------------
 # 주 프로그램부
 age=input_age()
 if age>18:
