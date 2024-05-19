@@ -5,4 +5,5 @@ def linear(ds,key):
     return
 
 dataset=[15,12,20,17,28]
-print(linear(dataset,17))
+sorted_ds=sorted(dataset)
+print(linear(sorted_ds,17))
