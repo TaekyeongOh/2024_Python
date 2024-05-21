@@ -19,17 +19,18 @@ def show_quiz(operator,operand):
         minus = int(input(f'{operator}-{operand}='))
         return minus
     
-def get_answer(plus,minus):
-    if show_quiz(operator,operand) == plus:
+def get_answer(operator,operand):
+    if show_quiz(operator,operand) == operator+operand:
         return operator+operand
-    if show_quiz(operator,operand) == minus:
+    if show_quiz(operator,operand) == operator-operand:
         return operator-operand
 
 
 # 주 프로그램
 operator=get_operator()
 operand=get_operand()
-if show_quiz(operator,operand) == get_answer(plus,minus):
+
+if show_quiz(operator,operand) == get_answer(operator,operand):
     print('정답입니다.')
 else:
     print('오답입니다.')
