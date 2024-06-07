@@ -1,15 +1,16 @@
-score = []
+# 리스트 scores에서 세 학생의 점수를 입력받기
+print('[점수 입력]')
 
-# 3번 반복하여 사용자로부터 점수를 입력받아 리스트에 추가합니다.
-for i in range(3):
-    # 사용자로부터 점수를 입력받습니다. 입력받은 값은 문자열이므로 정수로 변환합니다.
-    s = int(input(f'#{i+1}? '))
-    # 리스트 score에 입력받은 점수를 추가합니다.
+score=[]
+
+for a in range(3):
+    s=int(input(f'#{a+1}? '))
     score.append(s)
-
-# 입력받은 점수를 출력합니다.
-print('입력받은 점수:', score)
-
+    
+print()
+print('[점수 출력]')
+print('입력 점수: ',score)
+# avg = scores의 저장된 점수의 평균을 구하기
 average=sum(score)/len(score)
-
+# scores의 각 학생 점수와 평균 avg를 출력하기
 print('평균: ',average)
